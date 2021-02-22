@@ -11,8 +11,11 @@ menu:
 
 # stylesheets loaded in the <head>
 stylesheets:
-- /css/noone.css
+    - /css/noone.css
 
 # scripts loaded in the end of the body
 scripts:
-- /js/noone.js
+    - /js/noone.js
+
+# ========= Images =========
+banner_image: "images/bg.jpg"

@@ -22,36 +22,38 @@ pageTitle += ' [ ' + config.title + ' ]';
   <% } %>
 </head>
 <body>
+  <div id="menu-outer" style="background-image: url(<%- url_for(theme.banner_image) %>);">
+    <div id="menu-inner">
+      <% Object.keys(theme.menu).forEach(key => { %>
+        <a class="menu" href="<%=theme.menu[key]%>"><%=key%></a>
+      <% }); %>
+    </div>
+    <div id="profile">
+      profile
+    </div>
+  </div>
 
-<div id="menu-outer">
-  <div id="menu-inner">
-    <% Object.keys(theme.menu).forEach(key => { %>
-      <a href="<%=theme.menu[key]%>"><%=key%></a>
+  <div id="content-outer">
+    <div id="content-inner">
+      <%- body %>
+    </div>
+  </div>
+
+  <div id="bottom-outer">
+    <div id="bottom-inner">
+      Site by <%=config.author%> using
+      <a href="http://hexo.io">hexo blog framework</a>.
+      <br>
+      <a href="<%=config.root%>">Home</a>
+    </div>
+  </div>
+
+  <% if (theme.scripts !== undefined && theme.scripts.length > 0) { %>
+    <!-- scripts list from theme config.yml -->
+    <% theme.scripts.forEach(url => { %>
+      <script src="<%=url%>"></script>
     <% }); %>
-  </div>
-</div>
-
-<div id="content-outer">
-  <div id="content-inner">
-    <%- body %>
-  </div>
-</div>
-
-<div id="bottom-outer">
-  <div id="bottom-inner">
-    Site by <%=config.author%> using
-    <a href="http://hexo.io">hexo blog framework</a>.
-    <br>
-    <a href="<%=config.root%>">Home</a>
-  </div>
-</div>
-
-<% if (theme.scripts !== undefined && theme.scripts.length > 0) { %>
-  <!-- scripts list from theme config.yml -->
-  <% theme.scripts.forEach(url => { %>
-    <script src="<%=url%>"></script>
-  <% }); %>
-<% } %>
+  <% } %>
 
 </body>
 </html>
