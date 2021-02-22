@@ -11,7 +11,8 @@ menu:
 
 # stylesheets loaded in the <head>
 stylesheets:
-    - /css/noone.css
+    - /css/style.css
+    - /css/index.css
 
 # scripts loaded in the end of the body
 scripts:
@@ -19,3 +20,4 @@ scripts:
 
 # ========= Images =========
 banner_image: "images/bg.jpg"
+avatar_image: "images/avatar.jpg"

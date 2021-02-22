@@ -22,14 +22,11 @@ pageTitle += ' [ ' + config.title + ' ]';
   <% } %>
 </head>
 <body>
-  <div id="menu-outer" style="background-image: url(<%- url_for(theme.banner_image) %>);">
+  <div id="menu-outer">
     <div id="menu-inner">
       <% Object.keys(theme.menu).forEach(key => { %>
         <a class="menu" href="<%=theme.menu[key]%>"><%=key%></a>
       <% }); %>
-    </div>
-    <div id="profile">
-      profile
     </div>
   </div>
 
