@@ -1,3 +1,4 @@
+// banner
 div#index-banner {
     background-size: cover;
 }
@@ -38,4 +39,50 @@ p#profile-signature {
     font-family: Heiti, Sans-serif;
     font-size: 1.2em;
     font-weight: bold;
+}
+
+// posts
+div#recent-posts {
+    margin: 0px auto;
+    max-width: 800px;    
+}
+
+div.recent-post-item {
+    margin: 50px 0px;
+}
+
+@tag-height: 32px;
+span.post-tag {
+    margin: 0px 5px;
+    background-color: lightgrey;
+    color: white;
+    height: @tag-height;
+    padding: 0px 12px;
+    vertical-align: super;
+    line-height: @tag-height;
+    text-align: center;
+    font-family: Heiti, Sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+span.post-title a {
+    color: black;
+    font-family: Heiti, Sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+div.post-image {
+    background-size: cover;
+    background-color: lightgray;    
+}
+
+p.post-excerpt {
+    color: grey;
+    font-family: Heiti, Sans-serif;
+    font-weight: lighter;
 }

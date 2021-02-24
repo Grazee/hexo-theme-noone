@@ -1,13 +1,35 @@
 
 <% if (page.posts.length > 0) { %>
   <div id="recent-posts">
-    <h1>Recent Posts</h1>
     <% page.posts.sort('date', -1).limit(10).each(post => { %>
       <div class="recent-post-item">
-        <a href="<%=url_for(post.path)%>"><%=post.title%></a>
-        <time datetime="<%=post.date.toJSON()%>">
-          <%=date(post.date)%>
-        </time>
+        <p>
+          <% if (post.categories.length > 0) { %>
+            <!-- 标签 -->
+            <% post.categories.limit(1).each(c => { %>
+              <span class="post-tag">
+                <%- trim(c.name) %>
+              </span>
+            <% }); %>
+          <% } %>
+          <!-- 标题 -->
+          <span class="post-title">
+            <a href="<%=url_for(post.path)%>"><%=post.title%></a>
+          </span>
+        </p>
+        <% if (page.photos) { %>
+          <!-- 图片 -->
+          <div class="post-image" style="background-image: url(<%- url_for(post.photos[0]) %>);">
+          </div>
+        <% } %>
+        <!-- 摘要 -->
+        <p class="post-excerpt">
+          <%- strip_html(post.excerpt)%>
+        </p>
+        <!-- 时间 -->
+        <!-- <time datetime="<%=post.date.toJSON()%>">
+             <%=date(post.date)%>
+             </time> -->
       </div>
     <% }); %>
   </div>
