@@ -19,5 +19,5 @@ scripts:
     - /js/noone.js
 
 # ========= Images =========
-banner_image: "images/bg.jpg"
+banner_image: "images/bg.png"
 avatar_image: "images/avatar.jpg"

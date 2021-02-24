@@ -1,31 +1,41 @@
 div#index-banner {
-    // height: 200px;
     background-size: cover;
 }
 
 div#profile-outer {
-    height: 240px;
-    text-align: center;
-    // background-color: blue;
+    text-align: center;    
+    padding: 50px 0px;
 }
 
-div#profile-menu {
-    height: 50px;
-    width: 100%;
-    display: inline-block;
-}
-
+@avatar-size: 100px;
 div#index-avatar {
-    width: 100px;
-    height: 100px;
+    width: @avatar-size;
+    height: @avatar-size;
     display: inline-block;
-    // background-color: blue;
     background-size: cover;
 }
 
 div#index-intro {
-    width: 200px;
+    text-align: left;    
+    width: 60%;
     height: 100px;
+    top: 0px;
     display: inline-block;
-    background-color: yellow;
+    margin: 0px 20px;
+    vertical-align: top;
+}
+
+p#profile-name {
+    color: white;
+    font-family: Heiti, Sans-serif;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+p#profile-signature {
+    color: white;
+    margin-top: 10px;
+    font-family: Heiti, Sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
 }
