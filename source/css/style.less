@@ -4,6 +4,7 @@ html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, ad
     padding:0px;
 }
 
+// 顶部菜单
 div#menu-outer {
     position: absolute;    
     top: 0px;
@@ -11,13 +12,36 @@ div#menu-outer {
 }
 
 div#menu-inner {
-    height: 50px;
+    // height: 50px;
     text-align: center;
-    // background-color: blue;
 }
 
 a.menu {    
     color: white;
     font-family: Heiti, Sans-serif;
+    font-size: 1.2em;
+    text-decoration: none;
+    line-height: 40px;
+    margin: 0px 8px;
+}
+
+// 底部
+div#bottom-outer {
+    background-color: lightgray;
+    // height: 100px;
+}
+
+div#bottom-inner {
+    margin: 0px auto;
+    max-width: 720px;
+    padding: 20px 40px;
+    vertical-align: middle;
+    // text-align: center;
+    color: darkgrey;
+    font-family: Heiti, Sans-serif;
+}
+
+div#bottom-inner > a {
+    color: grey;
     text-decoration: none;
 }
