@@ -51,9 +51,9 @@ div.recent-post-item {
     margin: 50px 0px;
 }
 
-@tag-height: 32px;
+@tag-height: 27px;
 span.post-tag {
-    margin: 0px 5px;
+    margin-right: 5px;
     background-color: lightgrey;
     color: white;
     height: @tag-height;
@@ -63,7 +63,7 @@ span.post-tag {
     text-align: center;
     font-family: Heiti, Sans-serif;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1em;
     border-radius: 3px;
     display: inline-block;
 }
@@ -78,11 +78,26 @@ span.post-title a {
 
 div.post-image {
     background-size: cover;
-    background-color: lightgray;    
+    background-color: lightgrey;    
 }
 
 p.post-excerpt {
-    color: grey;
+    margin: 12px 0px;
+    color: grey;    
     font-family: Heiti, Sans-serif;
     font-weight: lighter;
+    font-size: 1.1em;
+}
+
+time.post-date {
+    color: lightgrey;
+    font-family: Heiti, Sans-serif;
+    font-weight: lighter;
+    font-size: 1em;
+    text-align: right;
+}
+
+hr.post {
+    border: 1px dashed lightgrey;
+    margin: 20px 0px;
 }

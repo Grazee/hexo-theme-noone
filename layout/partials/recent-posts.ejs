@@ -23,13 +23,15 @@
           </div>
         <% } %>
         <!-- 摘要 -->
-        <p class="post-excerpt">
+        <p class="post-excerpt">          
           <%- strip_html(post.excerpt)%>
         </p>
         <!-- 时间 -->
-        <!-- <time datetime="<%=post.date.toJSON()%>">
-             <%=date(post.date)%>
-             </time> -->
+        <time class="post-date" datetime="<%=post.date.toJSON()%>">
+          <%=date(post.date)%>
+        </time>
+        <!-- 分割线 -->
+        <hr class="post" />
       </div>
     <% }); %>
   </div>
