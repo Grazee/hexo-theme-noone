@@ -4,15 +4,16 @@ language: en
 
 # main menu navigation
 menu:
-  Home: /
-  About: /about
-  Contact: /contact
-  Archives: /archives
+  首页: /
+  关于: /about
+#  Contact: /contact
+  文章: /archives
 
 # stylesheets loaded in the <head>
 stylesheets:
     - /css/style.css
     - /css/index.css
+    - /css/post.css
 
 # scripts loaded in the end of the body
 scripts:

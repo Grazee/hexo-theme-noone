@@ -4,6 +4,10 @@ html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, ad
     padding:0px;
 }
 
+p, a, span, h1, h2, h3, h4, h5, h6, pre, time {
+    font-family: Heiti, Sans-serif;
+}
+
 // 顶部菜单
 div#menu-outer {
     position: absolute;    
@@ -18,7 +22,6 @@ div#menu-inner {
 
 a.menu {    
     color: white;
-    font-family: Heiti, Sans-serif;
     font-size: 1.2em;
     text-decoration: none;
     line-height: 40px;
@@ -27,7 +30,7 @@ a.menu {
 
 // 底部
 div#bottom-outer {
-    background-color: lightgray;
+    background-color: #eeeeee;
     // height: 100px;
 }
 
@@ -36,12 +39,10 @@ div#bottom-inner {
     max-width: 720px;
     padding: 20px 40px;
     vertical-align: middle;
-    // text-align: center;
     color: darkgrey;
-    font-family: Heiti, Sans-serif;
 }
 
-div#bottom-inner > a {
+div#bottom-inner > p > a {
     color: grey;
     text-decoration: none;
 }
