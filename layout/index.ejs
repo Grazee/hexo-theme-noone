@@ -18,5 +18,8 @@
 <%-partial('partials/recent-posts')%>
 
 <div id="paginator">
-  <%-paginator()%>
+  <%-paginator({
+      prev_text: '<',
+      next_text: '>'      
+  })%>
 </div>
