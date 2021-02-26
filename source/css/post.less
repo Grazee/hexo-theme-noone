@@ -1,13 +1,13 @@
 // 文章页banner
 div#post-banner-outer {
     background-size: cover;
-    padding: 60px 0px;
 }
 
 div#post-banner-inner {
     max-width: 800px;
     margin: 0px auto;
-    padding: 0px 40px;
+    padding: 100px 40px;
+    background-color: #00000088;
 }
 
 p#banner-title {
@@ -36,6 +36,7 @@ article > * {
 article p {
     font-weight: normal;
     color: #444444;
+    // text-indent: 2em;
 }
 
 article a {
@@ -43,8 +44,17 @@ article a {
     font-weight: bold;
 }
 
+article blockquote {
+    background-color: #eeeeee;
+    padding: 4px 10px 4px 30px;
+    border-left: solid;
+    border-width: 4px;
+    border-color: #F7AC2C;
+}
+
 // 图像
 img {
+    width: 100%;
     max-height: 300px;
     max-width: 800px;
     margin: 5px auto;

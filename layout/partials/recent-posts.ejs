@@ -17,10 +17,10 @@
             <a href="<%=url_for(post.path)%>"><%=post.title%></a>
           </span>
         </p>
-        <% if (page.photos) { %>
-          <!-- 图片 -->
-          <div class="post-image" style="background-image: url(<%- url_for(post.photos[0]) %>);">
-          </div>
+        <% if (post.photos.length > 0) { %>
+          <!-- 图片
+               <!-- <div class="post-image" style="background: url(<%- url_for(post.photos[0]) %>) center center no-repeat;"> -->
+          <!-- </div> -->
         <% } %>
         <!-- 摘要 -->
         <p class="post-excerpt">
