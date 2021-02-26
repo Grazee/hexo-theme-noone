@@ -3,12 +3,14 @@
 <% } else { %>
     <div id="post-banner-outer" style="background-image: url(<%- url_for(theme.banner_image)%>);">
 <% } %>
+<div id="banner-mask">
 <div id="post-banner-inner">
   <p id="banner-title"><%=page.title%></p>
   <time class="date" datetime="<%=page.date.toJSON()%>">
     <%=date(page.date)%>
-    </time>
-  </div>
+  </time>
+</div>
+</div>
 </div>
 
 <article id="post">
