@@ -23,8 +23,12 @@
           </div>
         <% } %>
         <!-- 摘要 -->
-        <p class="post-excerpt">          
-          <%- strip_html(post.excerpt)%>
+        <p class="post-excerpt">
+          <% if (post.excerpt.length > 0) { %>
+            <%- strip_html(post.excerpt)%>
+          <% } else { %>
+            <%- truncate(strip_html(post.content), {length: 100})%>
+          <% } %>
         </p>
         <!-- 时间 -->
         <time class="post-date" datetime="<%=post.date.toJSON()%>">

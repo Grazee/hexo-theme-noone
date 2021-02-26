@@ -5,9 +5,9 @@ language: en
 # main menu navigation
 menu:
   首页: /
-  关于: /about
 #  Contact: /contact
   文章: /archives
+  关于: /about    
 
 # stylesheets loaded in the <head>
 stylesheets:
