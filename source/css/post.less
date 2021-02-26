@@ -22,22 +22,20 @@ time.post-date {
     font-weight: normal;
 }
 
-// 文章内容
+// 文字
 article#post {    
     max-width: 800px;
     margin: 30px auto;
     padding: 0px 40px;
 }
 
-article * {
+article > * {
     margin: 15px 0px;
 }
 
 article p {
-    font-size: 1.2em;
     font-weight: normal;
     color: #444444;
-    // text-indent: 2em;
 }
 
 article a {
@@ -45,8 +43,17 @@ article a {
     font-weight: bold;
 }
 
+// 图像
+img {
+    max-height: 300px;
+    max-width: 800px;
+    margin: 5px auto;
+}
+
+// 代码块
 article figure {
     background-color: #eeeeee;
+    overflow: auto;
 }
 
 figure td {
@@ -72,10 +79,5 @@ figure span {
 
 td.gutter span {
     color: #cccccc;
-}
-            
-img {
-    max-height: 200px;
-    margin: 0px auto;
-    display: block;
+    // width: 40px;
 }
