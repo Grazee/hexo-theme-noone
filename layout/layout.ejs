@@ -40,16 +40,16 @@ pageTitle += ' [ ' + config.title + ' ]';
     <div id="bottom-inner">
       <p>
         Site by
-        <a href="http://hexo.io"><%=config.author%></a>
+        <a href="<%= url_for("/about") %>"><%=config.author%></a>
         <br />
         using
         <a href="http://hexo.io">hexo blog framework</a>
         <br />
         with theme
-        <a href="http://hexo.io">Noone</a>.
+        <a href="https://github.com/Grazee/hexo_noone">Noone</a>.
         <!-- 备案 -->
         <br />
-        <a href="http://hexo.io">蜀ICP备19016566号</a>.
+        <a href="<%= theme.record_url%>"><%= theme.record%></a>.
       </p>
     </div>
   </div>

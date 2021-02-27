@@ -22,3 +22,7 @@ scripts:
 # ========= Images =========
 banner_image: "images/bg.png"
 avatar_image: "images/avatar.jpg"
+
+# ========= 备案信息 =========
+record: "蜀ICP备19016566号"
+record_url: "https://beian.miit.gov.cn/"
