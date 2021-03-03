@@ -5,28 +5,28 @@ const tagsList = list_tags({ show_count: false });
 const archivesList = list_archives({ show_count: false });
 %>
 
+<div id="index-banner" style="background-image: url(<%- url_for(theme.banner_image)%>)">
+  <div id="banner-mask">
+    <div id="archive-outer">
+      <p id="archive-title">
+        目录
+      </p>
+    </div>
+  </div>
+</div>
+
 <% if (is_year() === false) { %>
   <div id="archive">
 
-    <h1>Archives</h1>
-
-    <% if (theme.atom !== undefined) { %>
-      <p>
-        The feed is available via
-        <a href="<%=theme.atom%>">atom</a>.
-      </p>
-      <br>
-    <% } %>
-
-    <aside>
-      <h2>Categories</h2>
+    <div>
+      <h1>文章分类</h1>
+      <hr />
       <% if (categoriesList !== "") { %>
         <%-categoriesList%>
       <% } else { %>
         <p>None.</p>
       <% } %>
-    </aside>
-    <br>
+    </div>
 
     <aside>
       <h2>Tags</h2>

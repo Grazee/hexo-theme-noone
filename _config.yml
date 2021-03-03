@@ -6,7 +6,7 @@ language: en
 menu:
   首页: /
 #  Contact: /contact
-  文章: /archives
+  目录: /archives
   关于: /about    
 
 # stylesheets loaded in the <head>
@@ -14,13 +14,16 @@ stylesheets:
     - /css/style.css
     - /css/index.css
     - /css/post.css
+    - /css/archive.css
 
 # scripts loaded in the end of the body
 scripts:
+    - /js/jquery-3.6.0.min.js
     - /js/noone.js
+    - /js/post.js  
 
 # ========= Images =========
-banner_image: "images/bg.png"
+banner_image: "images/bg.jpg"
 avatar_image: "images/avatar.jpg"
 
 # ========= 备案信息 =========

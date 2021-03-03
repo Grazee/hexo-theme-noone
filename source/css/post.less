@@ -1,6 +1,7 @@
 // 文章页banner
 div#post-banner-outer {
     background-size: cover;
+    background-position: center;
 }
 
 div#post-banner-inner {
@@ -55,14 +56,24 @@ article blockquote {
 img {
     // width: 100%;
     max-height: 300px;
-    max-width: 800px;
-    margin: 5px auto;
+    max-width: 100%;
+    margin: 8px auto;
+    display: block;
+}
+
+span.image-title {
+    display: block;
+    text-align: center;
+    color: lightgrey;
+    // text-decoration: underline;
 }
 
 // 代码块
 article figure {
     background-color: #eeeeee;
+    font-size: 0.8em;
     overflow: auto;
+    font-family: Menlo, Monospace;
 }
 
 figure td {
@@ -71,8 +82,6 @@ figure td {
 
 code {
     margin: 3px;
-    font-size: 0.9em;
-    font-family: Menlo, Monospace;
     background-color: #eeeeee;
     padding: 1px 4px;
     border-color: #cccccc;
