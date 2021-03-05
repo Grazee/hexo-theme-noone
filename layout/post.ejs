@@ -1,3 +1,9 @@
+<!-- 图片大图 -->
+<div id="fullscreen-image" hidden="true">
+  <img>
+</div>
+
+<!-- banner -->
 <% if (page.photos.length > 0) { %>
   <div id="post-banner-outer" style="background-image: url(<%= page.photos[0]%>);">
 <% } else { %>
@@ -13,6 +19,7 @@
 </div>
 </div>
 
+<!-- 文章主体 -->
 <article id="post">
   <%-page.content%>
 </article>
