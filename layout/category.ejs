@@ -1,17 +1,27 @@
-
-<div id="category">
-  <h1><%=page.category%></h1>
-  <% page.posts.each(article => { %>
-    <div class="category-item">
-      <a href="<%=url_for(article.path)%>">
-        <%=article.title%>
-      </a>
-      <time datetime="<%=date_xml(article.date)%>">
-        <%=date(article.date)%>
-      </time>
+<div id="index-banner" style="background-image: url(<%- url_for(theme.banner_image)%>)">
+  <div id="banner-mask">
+    <div id="archive-outer">
+        <p id="archive-title">
+            分类 | <%=page.category%>
+        </p>
     </div>
-  <% }); %>
+  </div>
 </div>
+
+<%-partial('partials/post-list')%>
+
+<!-- <div id="category">
+     <% page.posts.each(article => { %>
+     <div class="category-item">
+     <a href="<%=url_for(article.path)%>">
+     <%=article.title%>
+     </a>
+     <time datetime="<%=date_xml(article.date)%>">
+     <%=date(article.date)%>
+     </time>
+     </div>
+     <% }); %>
+     </div> -->
 
 <div id="paginator">
   <%-paginator()%>
