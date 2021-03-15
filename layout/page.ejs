@@ -1,9 +1,27 @@
+<!-- 图片大图 -->
+<div id="fullscreen-image" hidden="true">
+    <img>
+</div>
 
-<article id="page">
-  <h1><%=page.title%></h1>
-  <%-page.content%>
+<!-- banner -->
+<div id="post-banner-outer" style="background-image: url(<%- url_for(theme.banner_image)%>);">
+
+    <div id="banner-mask">
+        <div id="post-banner-inner">
+            <p id="banner-title"><%=page.title%></p>
+            <time class="date" datetime="<%=page.date.toJSON()%>">
+                <%=date(page.date)%>
+            </time>
+        </div>
+    </div>
+</div>
+
+<!-- 文章主体 -->
+<article id="post">
+    <%-page.content%>
 </article>
 
 <div id="paginator">
-  <%-paginator()%>
+    <%-paginator()%>
 </div>
+

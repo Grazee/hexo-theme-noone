@@ -5,7 +5,6 @@ language: en
 # main menu navigation
 menu:
   首页: /
-#  Contact: /contact
   目录: /archives
   关于: /about    
 
