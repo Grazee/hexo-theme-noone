@@ -13,16 +13,33 @@
 <div id="post-banner-inner">
   <p id="banner-title"><%=page.title%></p>
   <time class="date" datetime="<%=page.date.toJSON()%>">
-    <%=date(page.date)%>
+      <%=date(page.date)%>
   </time>
 </div>
 </div>
-</div>
+    </div>
 
 <!-- 文章主体 -->
 <article id="post">
-  <%-page.content%>
+    <%-page.content%>
 </article>
+
+<!-- 评论区 -->
+<% if (theme.valine.enable) {%>
+    <!-- 分割线 -->
+    <hr class="post" />
+
+    <div id="vcomments"></div>        
+    <script>
+     new Valine({
+         el: '#vcomments',
+         appId: '<%= theme.valine.leancloud_appid %>',
+         appKey: '<%= theme.valine.leancloud_appkey %>',
+         placeholder: '<%= theme.valine.placeholder %>',
+         meta: ['nick','mail']
+     })
+    </script>
+<% }%>
 
 <div id="paginator">
   <%-paginator()%>

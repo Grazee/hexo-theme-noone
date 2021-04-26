@@ -1,3 +1,5 @@
+@max_width: 800px;
+
 // 放大全屏图片
 div#fullscreen-image {
     position: fixed;
@@ -24,7 +26,7 @@ div#post-banner-outer {
 }
 
 div#post-banner-inner {
-    max-width: 800px;
+    max-width: @max_width;
     margin: 0px auto;
     padding: 100px 40px;
 }
@@ -43,7 +45,7 @@ time.date {
 
 // 文字
 article#post {    
-    max-width: 800px;
+    max-width: @max_width;
     margin: 30px auto;
     padding: 0px 40px;
 }
@@ -73,7 +75,6 @@ article blockquote {
 
 // 图像
 article img {
-    // width: 100%;
     max-height: 300px;
     max-width: 100%;
     margin: 8px auto;
@@ -117,4 +118,28 @@ figure span {
 td.gutter span {
     color: #cccccc;
     // width: 40px;
+}
+
+// 评论区
+div#vcomments {
+    max-width: @max_width;
+    margin: 30px auto;
+    padding: 0px 40px;    
+}
+
+div.vpower {
+    visibility: hidden;
+    height: 0px;
+}
+
+span.vsys {
+    visibility: hidden;
+}
+
+span.vat {
+    font-size: 1.2em;
+}
+
+a.vicon {
+    visibility: hidden;
 }

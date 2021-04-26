@@ -16,11 +16,17 @@ pageTitle += ' | ' + config.title;
   <meta charset="UTF-8">
   <title><%=pageTitle%></title>
   <% if (theme.stylesheets !== undefined && theme.stylesheets.length > 0) { %>
-    <!-- stylesheets list from _config.yml -->
-    <% theme.stylesheets.forEach(url => { %>
-      <link rel="stylesheet" href="<%=url%>">
-    <% }); %>
+      <!-- stylesheets list from _config.yml -->
+      <% theme.stylesheets.forEach(url => { %>
+          <link rel="stylesheet" href="<%=url%>">
+      <% }); %>
   <% } %>
+  
+  <!-- Valine -->
+  <% if (theme.valine.enable) {%>
+      <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  <% } %>
+  
 </head>
 <body>
   <div id="menu-outer">

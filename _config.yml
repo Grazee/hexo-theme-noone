@@ -4,9 +4,9 @@ language: en
 
 # main menu navigation
 menu:
-  首页: /
-  目录: /archives
-  关于: /about    
+    首页: /
+    目录: /archives
+    关于: /about    
 
 # stylesheets loaded in the <head>
 stylesheets:
@@ -22,8 +22,15 @@ scripts:
     - /js/post.js  
 
 # ========= Images =========
-banner_image: "images/bg.jpg"
-avatar_image: "images/avatar.jpg"
+banner_image: images/bg.jpg
+avatar_image: images/avatar.jpg
+
+# ========= Comment =========
+valine:
+    enable: false
+    leancloud_appid:
+    leancloud_appkey:
+    placeholder: 欢迎留言
 
 # ========= 备案信息 =========
 record: "蜀ICP备19016566号"
