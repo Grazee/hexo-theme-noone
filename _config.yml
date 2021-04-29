@@ -33,5 +33,7 @@ valine:
     placeholder: 欢迎留言
 
 # ========= 备案信息 =========
-record: "蜀ICP备19016566号"
-record_url: "https://beian.miit.gov.cn/"
+beian:
+    enable: false
+    record: 
+    record_url: https://beian.miit.gov.cn/

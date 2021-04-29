@@ -54,9 +54,11 @@ pageTitle += ' | ' + config.title;
         <br />
         with theme
         <a href="https://github.com/Grazee/hexo-theme-noone">Noone</a>.
-        <!-- 备案 -->
-        <br />
-        <a href="<%= theme.record_url%>"><%= theme.record%></a>.
+        <% if (theme.beian.enable) { %>
+            <!-- 备案 -->
+            <br />
+            <a href="<%= theme.record_url %>"><%= theme.record %></a>.
+        <% } %>
       </p>
     </div>
   </div>
