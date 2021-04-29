@@ -5,7 +5,7 @@
 ![](simple.jpg)
 
 # 安装
-由于Noone使用less引擎渲染css文件，因此需要安装[hexo-renderer-less](https://github.com/hexojs/hexo-renderer-less)。  
+由于Noone使用[less](https://less.bootcss.com/)引擎渲染css文件，因此需要安装[hexo-renderer-less](https://github.com/hexojs/hexo-renderer-less)。  
 在Hexo博客**根目录**下执行如下shell指令即可。  
 ```shell
 npm install hexo-renderer-less --save
