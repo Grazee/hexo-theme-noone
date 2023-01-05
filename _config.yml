@@ -27,13 +27,13 @@ avatar_image: images/avatar.jpg
 
 # ========= Comment =========
 valine:
-    enable: false
-    leancloud_appid:
-    leancloud_appkey:
+    enable: true
+    leancloud_appid: YTSNMbLNmih6J8zSP9LJhT2Q-gzGzoHsz
+    leancloud_appkey: s4t9Xf30U13lvsHruF9BvcE0
     placeholder: 欢迎留言
 
 # ========= 备案信息 =========
 beian:
-    enable: false
-    record: 
+    enable: true
+    record: 蜀ICP备19016566号
     record_url: https://beian.miit.gov.cn/
